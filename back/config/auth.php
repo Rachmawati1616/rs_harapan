@@ -17,6 +17,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => \Modules\Users\Models\User::class
-        ]
-    ]
+        ],
+        'form_request' => [
+            'driver' => 'eloquent',
+            'model' => \Urameshibr\Providers\FormRequestServiceProvider::class,
+        ],
+    ],
 ];
